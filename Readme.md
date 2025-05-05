@@ -29,10 +29,7 @@ and the decision to use a 3-Axis Rate Gyro was abandanoed due to this.
 terminal that can be used to debug the Photon boards incase the Wi-Fi method fails.
 7) Particle online IDE was used to flash code into the Photons remotely without
 any physical serial connection with the user laptop (although a USB was still 
-connected though, it was addressed as a power port and not in any way a leak of
-ultra-secret information of national security which was based on Amazon Echo's 
-Alexa's boring mundane and almost sad remarks about anything - yes, the Echo 
-does not have a sense of humor for those who are expecting a bit too much).
+connected though, it was addressed as a power port).
 8) Programming the Echo was the most important part. Lambda functions were
 created for specifying separate skills which would be updated based on user's
 request [lambda_function_AWS]. Intents were described on the developers page. 
@@ -48,16 +45,10 @@ the Amazon Echo (which would query only real-time). The Python script would
 store all sensor information along with sensor device ID and timestamps in a 
 comma separated values (CSV file). Please refer to getSensitivity.py for more 
 details about this Python script. 
-10) Finally the repo also consists of Particle Photon sensor device drivers for Windows. Please ensure Windows doesn't try to automatically find drivers (disable that horrible feature) and manually update the drivers yourself.
+10) Finally the repo also consists of Particle Photon sensor device drivers for Windows. 
 11) As a final exercise, Keysight's new diagnostic software BenchVue was used to 
 probe sensor data and create workflows for acquiring and managing sensor data 
 whenever required.
-
-Lessons learned
-1) Node.js might be over-hyped but more people use it than you know.
-2) Oculus Rift needs a near 100% perfect insanely powerful hardware.
-3) Magic Leaps Leap Motion does not live upto expectation.
-4) Intel Edison is a good IoT device which is too expensive to ever be awesome.
 
 Hardware
 - Amazon Echo Device
